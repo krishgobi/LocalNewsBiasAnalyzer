@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+pandas  # If used
+beautifulsoup4  # If used for web scraping
+scikit-learn  # If used for ML
+tensorflow  # If using deep learning
