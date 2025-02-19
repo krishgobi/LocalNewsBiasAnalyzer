@@ -67,7 +67,7 @@ def classify_news(text):
 
 @app.get("/", response_class=HTMLResponse)
 async def home():
-    return open("static/index.html").read()
+    return open("index.html").read()
 
 @app.post("/predict")
 async def predict_bias(news: NewsInput):
