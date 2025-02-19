@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local News Bias Analyzer</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://wallpaperaccess.com/full/1558276.jpg'); /* Replace with your image URL */
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents image repetition */
+        }
+
+        /* Main container */
+        .container {
+            margin-left: 250px; /* Leave space for the side navigation */
+            padding: 20px;
+            background-color: rgba(63, 63, 63, 0.8); /* Semi-transparent background */
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #efe8e8;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 50px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 200px;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #c12c2f;
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #002184;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        /* Side Navigation Bar */
+        .sidenav {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: #ebe3e3;
+            padding-top: 20px;
+            padding-right: 20px;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .sidenav a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #c12c2f;
+            display: block;
+            border-bottom: 1px solid #bbb;
+            margin-bottom: 10px;
+        }
+
+        .sidenav a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+       
+        
+    </style>
+</head>
+<body>
+
+    <!-- Side Navigation -->
+    <div class="sidenav">
+        <a href="">Home</a>
+        <a href="#">Local News</a>
+        <a href="#">State News</a>
+        <a href="#">National News</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Local News Bias Analyzer</h1>
+        <textarea id="newsInput" placeholder="Enter the news article here..."></textarea>
+        <button onclick="classifyNews()">Classify Bias</button>
+      
+    </div>
+    <div class="box">
+        <div id="result" >Your result goes here</div>
+    </div>
+    
+
+
+  <style>
+    #result {
+        color: rgb(230, 225, 231); /* Custom text color */
+        font-weight: bold;         /* Makes the text bold */
+        display: grid;             /* Use grid display */
+        place-items: center;       /* Centers the content in the grid */
+        border: 2px solid black;   /* Adds a border to the box */
+        padding: 20px;             /* Adds space inside the box */
+        width: fit-content;        /* Adjusts the width to fit content */
+        margin-left: 560px;         /* Moves the box slightly to the left */
+        font-size: 20px;           /* Adjusts font size */       /* Makes the box round */
+        background-color: rgba(63, 63, 63, 0.8); /* Background color for the box */
+    }
+</style>
+
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
