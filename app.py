@@ -19,9 +19,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Serve static files (HTML, CSS, JS)
-app.mount("/static", StaticFiles(directory="static"), name="static")
-
 # Predefined keywords for bias classification
 political_keywords = {
     "Republican": ["conservative", "right-wing", "GOP", "Trump", "MAGA"],
